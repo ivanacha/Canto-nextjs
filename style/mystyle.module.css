@@ -10,12 +10,30 @@
   color: #fff;
   backface-visibility: hidden;
   border: 0.3rem solid transparent;
-  border-radius: 9rem;
+  border-radius: 1em;
   border-color: transparent;
-  transition: background-color .3s ease-in;
+  transition: background-image .4s ease-in;
+  margin: 0.3em;
 }
 
 .headerButton:hover {
-  color: #fff;
-  background-color: #60605e;
+  background-image: linear-gradient(
+    to bottom,
+    #b10723,
+    #1229ba,
+    #010003
+  );
+  background-position: 100% 0;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.button {
+  background-color: transparent;
+}
+
+.h1{
+  font-size: x-large;
+  color: turquoise;
 }

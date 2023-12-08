@@ -41,12 +41,17 @@ const Blog: React.FC<Props> = (props) => {
       </div>
       <style jsx>{`
         .post {
-          background: white;
+          background: grey;
           transition: box-shadow 0.1s ease-in;
+          border-radius: 2em;
+        }
+
+        h1 {
+          position: center;
         }
 
         .post:hover {
-          box-shadow: 1px 1px 3px #aaa;
+          box-shadow: 1px 1px 3px #fff;
         }
 
         .post + .post {

@@ -83,7 +83,7 @@ const Header: React.FC = () => {
     right = (
       <div className="right">
         <a href="/api/auth/signin" data-active={isActive('/signup')} className={styles.headerButton}>
-        <span className={styles.headerButtonspan}>Log In</span>
+          Log In
         </a>
         <style jsx>{`
           a {
@@ -130,9 +130,6 @@ const Header: React.FC = () => {
             display: inline-block;
           }
 
-          .left a[data-active='true'] {
-            color: gray;
-          }
 
           a + a {
             margin-left: 1rem;
@@ -145,12 +142,10 @@ const Header: React.FC = () => {
         <p>
           {session.user.name} ({session.user.email})
         </p>
-        <Link href="/create">
-          <button>
-            New post
-          </button>
+        <Link href="/create" className={styles.headerButton}>
+          New post
         </Link>
-        <button onClick={() => signOut()}>
+        <button onClick={() => signOut()} className={styles.headerButton}>
           Log out
         </button>
         <style jsx>{`
