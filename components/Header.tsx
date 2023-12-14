@@ -130,6 +130,9 @@ const Header: React.FC = () => {
             display: inline-block;
           }
 
+          .left a[data-active='true'] {
+            color: gray;
+          }
 
           a + a {
             margin-left: 1rem;
